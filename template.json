@@ -1,0 +1,90 @@
+{
+  "Actor": {
+    "types": ["PC", "NPC"],
+    "templates": {
+      "base": {
+        "hitThreshold": 3,
+        "armor": 0
+      }
+    },
+    "PC": {
+      "templates": ["base"],
+      "biography": "",
+      "generalPoints": 0,
+      "investigativePoints": 0,
+      "buildPoints": 0
+    },
+    "NPC": {
+      "templates": ["base"],
+      "biography": ""
+    }
+  },
+  "Item": {
+    "types": ["credential", "investigativeAbility", "generalAbility", "gear", "weapon", "extra"],
+    "templates": {
+      "base": {
+        "description": "",
+        "sortOrder": 0,
+        "group": ""
+      },
+      "ability": {
+        "rating": 0,
+        "pool": 0,
+        "min": 0,
+        "max": 100,
+        "boostable": false,
+        "boosted": false
+      }
+    },
+    "credential": {
+      "templates": ["base"],
+      "credType": "text",
+      "value": ""
+    },
+    "investigativeAbility": {
+      "templates": ["base", "ability"]
+    },
+    "generalAbility": {
+      "templates": ["base", "ability"],
+      "booster": "",
+      "boosterThreshold": 8,
+      "ablative": false,
+      "primaryTracked": false,
+      "secondaryTracked": false
+    },
+    "gear": {
+      "templates": ["base"],
+      "tags": [],
+      "quantity": 1
+    },
+    "weapon": {
+      "templates": ["base"],
+      "tags": [],
+      "quantity": 1,
+      "autofires": false,
+      "stuns": false,
+      "damage": "",
+      "pointBlank": "",
+      "close": "",
+      "near": "",
+      "long": ""
+    },
+    "extra": {
+      "templates": ["base"],
+      "value": "",
+      "fielded": false,
+      "fieldNames": [],
+      "fieldValues": [],
+      "ratable": false,
+      "rating": 0,
+      "checkable": false,
+      "checked": false,
+      "poolable": false,
+      "pool": 0,
+      "detailable": false,
+      "detail": "",
+      "upkeepable": false,
+      "upkeep": 0
+    }
+  }
+}

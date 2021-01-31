@@ -1,0 +1,29 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <div class="header-fields">
+            <h1 class="charname">Investigative Abilities</h1>
+        </div>
+    </header>
+    <div class="abilities" data-group="primary" data-tab="abilities">
+        <ol class="abilities-list line-items-list">
+            <li class="ability flexrow line-item-header">
+                <div class="ability-source">Source</div>
+                <div class="ability-name">Name</div>
+                <div class="ability-group">Group</div>
+                <div class="line-item-controls">
+                    <a class="ability-control ability-add" title="Add Ability" data-type="ability"><i class="fas fa-plus"></i> Add</a>
+                </div>
+            </li>
+            {{#each setting.entries as |ability index|}}
+            <li class="ability flexrow line-item" data-ability-id="{{ability._id}}">
+                <h4 class="ability-source line-item-datum">{{ability.source.name}}</h4>
+                <h4 class="ability-name line-item-datum">{{ability.item.name}}</h4>
+                <h4 class="ability-group line-item-datum">{{ability.group}}</h4>
+                <div class="line-item-controls">
+                    <a class="ability-delete" title="Delete Ability"><i class="fas fa-trash"></i></a>
+                </div>
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+</form>
