@@ -1,8 +1,8 @@
 // Import Modules
-import { GumshoeActor } from "./actor/actor.js";
-import { GumshoeActorSheet } from "./actor/actor-sheet.js";
-import { GumshoeItem } from "./item/item.js";
-import { GumshoeItemSheet } from "./item/item-sheet.js";
+import { GumshoeActor } from ".templates/actor/actor.js";
+import { GumshoeActorSheet } from ".templates/actor/actor-sheet.js";
+import { GumshoeItem } from ".templates/item/item.js";
+import { GumshoeItemSheet } from ".templates/item/item-sheet.js";
 import {MenuCharsheetCredentials} from "./expression/settings/menuCharsheetCredentials.js";
 import {MenuCharsheetInvestigativeAbilities} from "./expression/settings/menuCharsheetInvestigativeAbilities.js";
 import {MenuCharsheetInvestigativeAbilityGroups} from "./expression/settings/menuCharsheetInvestigativeAbilityGroups.js";
