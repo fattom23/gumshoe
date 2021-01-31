@@ -16,7 +16,7 @@ export class GumshoeActor extends Actor {
   static async create(data, options) {
     let gsActor = await super.create(data, options);
 
-    if(gsActor.data.type === 'PC') {
+    /** if(gsActor.data.type === 'PC') {
       let creds = SystemExpression.credentials;
       for(let i = 0; i < creds.entries.length; i++) {
         let entry = creds.entries[i];
@@ -25,7 +25,7 @@ export class GumshoeActor extends Actor {
           item.data.data.sortOrder = i;
           gsActor.createOwnedItem(item.data);
         }
-      }
+      } */
       let ias = SystemExpression.investigativeAbilities;
       for(let i = 0; i < ias.entries.length; i++) {
         let entry = ias.entries[i];
@@ -37,7 +37,7 @@ export class GumshoeActor extends Actor {
         }
       }
       // console.log("Do some PC stuff");
-    } else if(gsActor.data.type === 'NPC') {
+    } else if(gsActor.data.type === 'NPC') { 
       // console.log("Do some NPC stuff");
     }
   }
